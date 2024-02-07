@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple color gradient website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="JavaScript.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- might not add nav ⬇ -->
+
+      <h1>Color gradient</h1>
+      <!-- i want the nav to have a dropdown menu by click/point -->
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Menu</button>
+        <div class="dropdown-menu">
+          <ul class="navList">
+            <a href="#panel" class="linkItem">Color panel</a>
+            <a href="#" class="linkItem">Home</a>
+            <a href="#" class="linkItem">About</a>
+            <a href="#" class="linkItem">Content</a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- dosen't need content just visual content ⬇ -->
+    <main class="mainContent">
+      <article class="article-page">
+        <!-- a color wheel with js "I don't know how to make it" -->
+
+        <!-- i want a simple color gradient bg as the content  -->
+        <div class="color-gradient-bg box-1"></div>
+        <div class="color-gradient-bg box-2"></div>
+        <div class="color-gradient-bg box-3"></div>
+        <div class="color-gradient-bg box-4"></div>
+        <h3>Color Panel ⬇</h3>
+        <div class="panel box-5" id="panel"></div>
+        <div class="contain">
+          <div class="color-picker"></div>
+          <div class="box-6">⬅ pick a color</div>
+        </div>
+      </article>
+    </main>
+
+    <!-- add the same style of header without the link   -->
+    <footer class="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  </body>
+</html>
